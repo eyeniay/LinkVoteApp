@@ -1,0 +1,68 @@
+.add-page {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.return-container {
+  display: flex;
+  margin: 0.8em 0.8em 0.8em 0.4em;
+  font-weight: bold;
+  color: var(--return-text);
+  cursor: pointer;
+}
+
+.return-text {
+  color: var(--black);
+  font-size: 1em;
+  margin-left: 0.5em;
+}
+
+.add-page-title {
+  color: var(--black);
+  margin: 0.4em 0 0.4em 0;
+  font-size: 1.8em;
+  font-weight: bold;
+  padding: 0.3em;
+}
+
+.add-input-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0.3em;
+}
+
+.input-title {
+  margin-left: 0.8em;
+  font-size: 1.1em;
+}
+
+.add-page-input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid var(--input-border);
+  border-radius: 0.3em;
+  font-size: 1em;
+}
+
+.add-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.8em;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--input-placeholder);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--input-placeholder);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--input-placeholder);
+}

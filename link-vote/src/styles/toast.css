@@ -1,0 +1,30 @@
+.toast-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.toast-message {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    background: var(--toast-background);
+    border: 1px solid var(--toast-border);
+    color: var(--toast-color);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    top: 0;
+    margin-top: 2em;
+    text-align: center;
+    padding: 0.5em 2em 0.5em 2em;
+    font-size: 1.8em;
+    border-radius: 0.2em;
+    z-index: 999999;
+}
+
+.toast-key {
+    font-weight: bold;
+}
+
+.toast-task {
+    margin-left: 0.4em;
+}

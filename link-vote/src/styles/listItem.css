@@ -1,0 +1,95 @@
+
+.item-container {
+    display: flex;
+    height: 90px;
+    margin: 0.8em 0.8em 0.8em 0.4em;
+    padding: 0.3em;
+    text-align: center;
+    border-radius: 0.4em;
+    position: relative;
+}
+
+.item-container:hover {
+    background-color: var(--submit-background);
+}
+
+.item-container:hover .delete-item {
+    display: inline;
+}
+
+.delete-item {
+    position:absolute;
+    top: -0.4em;
+    right: -0.4em;
+    display: none;
+    cursor: pointer;
+}
+
+.item-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 0.75em;
+}
+
+.item-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-vote {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-name {
+    color: var(--black);
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.item-url {
+    color: var(--url);
+    font-size: 0.9em;
+    text-align: left;
+}
+
+.item-square {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    background-color: var(--square-background);
+    border: 1px solid var(--square-border);
+    border-radius: 0.4em;
+}
+
+.rank {
+    color: var(--black);
+    font-size: 2.1em;
+    font-weight: bold;
+}
+
+.rank-text {
+    color: var(--black);
+    font-size: 1em;
+}
+
+.vote {
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.vote-text {
+    color: var(--vote);
+    margin-left: 0.3em;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.down {
+    margin-left: 3em;
+}

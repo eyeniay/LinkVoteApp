@@ -1,0 +1,42 @@
+
+.list-page {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.submit-container {
+    display: flex;
+    height: 90px;
+    background-color: var(--submit-background);
+    border: 1px solid var(--submit-border);
+    padding: 0.3em;
+    margin: 0.8em 0.8em 0.8em 0.4em;
+    text-align: center;
+    border-radius: 0.4em;
+    cursor: pointer;
+}
+
+.submit-text {
+    display: flex;
+    align-items: center;
+    margin-left: 1.25em;
+    margin-right: 1.75em;
+    color: var(--black);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    background-color: var(--square-background);
+    border: 1px solid var(--square-border);
+    border-radius: 0.4em;
+}
+
+.list-border-line {
+    border-bottom:  2px solid var(--square-background);
+}
