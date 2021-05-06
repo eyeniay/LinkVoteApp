@@ -11,9 +11,12 @@ export const ReducerActionsType = {
     ScreenType: "scrennType",
     SortType: "chngSortType",
     AddToastMsg: "addToastMessage",
+    SetPageID: "chngpageID",
 };
 
 export const Screnn = {
     List: 0,
     Add: 1
 };
+
+export const ItemPerPage = 5;

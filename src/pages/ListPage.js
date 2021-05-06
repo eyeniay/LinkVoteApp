@@ -1,6 +1,6 @@
 import ListItem from "../components/ListItem";
 import Dropdown from "../components/Dropdown";
-import { SortOptions, ReducerActionsType, Screnn } from "../constants";
+import { SortOptions, ReducerActionsType, Screnn, ItemPerPage } from "../constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { useStore } from "../store";
@@ -23,7 +23,7 @@ function ListPage() {
       </div>
       <div className="list-border-line" />
       {state.list.length > 0 && (<Dropdown defaultText="Order by" options={SortOptions} />)}
-      {state.list.map((item) => {
+      {state.list.slice(state.pageId * ItemPerPage, (state.pageId * ItemPerPage) + ItemPerPage).map((item) => {
         return <ListItem item={item} key={item.id} />;
       })}
     </div>

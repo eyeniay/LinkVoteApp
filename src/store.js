@@ -6,7 +6,7 @@ const initialState = {
   screen: Screnn.List,
   toastMessage: undefined,
   sortType: undefined,
-  pageId: 0
+  pageId: 0,
 };
 
 function reducerActions(state, action) {
@@ -23,6 +23,8 @@ function reducerActions(state, action) {
       return changeSortType(state, action);
     case ReducerActionsType.AddToastMsg:
       return { ...state, toastMessage: action.payload };
+    case ReducerActionsType.SetPageID:
+      return { ...state, pageId: action.payload };
     default:
       return state;
   }
